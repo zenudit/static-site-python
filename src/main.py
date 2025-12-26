@@ -1,11 +1,9 @@
-from textnode import TextNode, Bender
+from textnode import TextNode, TextType
+
 
 def main():
-    node = TextNode(
-        "This is some anchor text",
-        Bender.AIR_BENDER,
-        "https://www.boot.dev"
-    )
+    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
     print(node)
+
 
 main()
